@@ -7,7 +7,7 @@
 **     Version     : Component 1.0.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2024-12-18, 22:10, # CodeGen: 25
+**     Date/Time   : 2024-12-21, 23:49, # CodeGen: 27
 **     Contents    :
 **         LPSPI_DRV_MasterGetDefaultConfig  - void LPSPI_DRV_MasterGetDefaultConfig(lpspi_master_config_t * spiConfig);
 **         LPSPI_DRV_MasterInit              - status_t LPSPI_DRV_MasterInit(uint32_t instance,lpspi_state_t *...

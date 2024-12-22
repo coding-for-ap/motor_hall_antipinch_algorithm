@@ -1,4 +1,4 @@
-#include "FTM.h"
+#include "ftm.h"
 #include "flexTimer_ic1.h"
 #include "flexTimer_ic2.h"
 

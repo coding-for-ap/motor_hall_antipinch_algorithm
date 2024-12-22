@@ -1,4 +1,4 @@
-#include "ADC.h"
+#include "adc.h"
 #include "lpit1.h"
 #include "dmaController1.h"
 #include "trgmux1.h"

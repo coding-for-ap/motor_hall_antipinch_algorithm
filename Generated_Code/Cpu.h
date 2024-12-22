@@ -7,7 +7,7 @@
 **     Version     : Component 01.197, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : S32K1XXRM Rev. 6, 12/2017
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2024-12-18, 22:10, # CodeGen: 25
+**     Date/Time   : 2024-12-22, 12:44, # CodeGen: 29
 **     Abstract    :
 **
 **     Settings    :
@@ -59,9 +59,9 @@
 
 #include "interrupt_manager.h"
 #include "clock.h"
-#include "osif.h"
 #include "lpit_driver.h"
 #include "edma_driver.h"
+#include "osif.h"
 #include "lpspi_master_driver.h"
 #include "lpspi_slave_driver.h"
 #include "lpspi_shared_function.h"

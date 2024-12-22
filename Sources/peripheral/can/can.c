@@ -1,4 +1,4 @@
-#include "CAN.h"
+#include "can.h"
 #include "canCom1.h"
 #include<string.h>
 

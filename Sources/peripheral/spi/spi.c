@@ -1,4 +1,4 @@
-#include "SPI.h"
+#include "spi.h"
 #include "lpspiCom1.h"
 
 #define BUFFER_SIZE (3u)

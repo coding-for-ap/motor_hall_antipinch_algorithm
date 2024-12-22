@@ -29,15 +29,16 @@ volatile int exit_code = 0;
 #include <stdbool.h>
 #include "clockMan1.h"
 #include "SEGGER_RTT.h"
-#include "IO.h"
-#include "LPIT.h"
-#include "TMR.h"
-#include "FTM.h"
-#include "ADC.h"
-#include "IIC.h"
-#include "SPI.h"
-#include "CAN.h"
-
+#include "scheduler.h"
+#include "task.h"
+#include "io.h"
+#include "lpit.h"
+#include "tmr.h"
+#include "ftm.h"
+#include "adc.h"
+#include "iic.h"
+#include "spi.h"
+#include "can.h"
 
 static void HardwareSetup( void )
 {
@@ -80,9 +81,11 @@ int main(void)
 
   HardwareSetup();
 
+  task_create();
+
   for(;;)
   {
-    
+    task_dispatch();
   }
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/

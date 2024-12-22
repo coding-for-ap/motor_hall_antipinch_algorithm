@@ -1,6 +1,5 @@
-#include "TMR.h"
+#include "tmr.h"
 #include "lpTmr1.h"
-#include "IO.h"
 
 /*!
  * @brief: LPMR interrupt handler.

@@ -1,4 +1,4 @@
-#include "IIC.h"
+#include "iic.h"
 #include <string.h>
 
 #if 1

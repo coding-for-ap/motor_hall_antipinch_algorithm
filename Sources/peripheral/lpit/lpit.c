@@ -1,5 +1,6 @@
-#include "LPIT.h"
+#include "lpit.h"
 #include "lpit1.h"
+#include "scheduler.h"
 
 /* LPIT channel used */
 #define LPIT_CHANNEL        0UL
@@ -11,6 +12,7 @@ void LPIT_ISR(void)
   {
     /* Clear LPIT channel flag */
     LPIT_DRV_ClearInterruptFlagTimerChannels(INST_LPIT1, (1 << LPIT_CHANNEL));
+	task_update();
   }
   if (LPIT_DRV_GetInterruptFlagTimerChannels(INST_LPIT1,(1 << (LPIT_CHANNEL+1))))
   {
